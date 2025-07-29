@@ -11,7 +11,7 @@ function App() {
     const [id,setId]=UseLocalStorage('id');
 
     const dashboard=(
-        <SocketProvider>
+        <SocketProvider id={id}>
             <ContactsProvider>
                 <ConversationsProvider id={id}>
                     <Dashboard id={id}/>
@@ -22,7 +22,6 @@ function App() {
   return (
     <>
       {id?dashboard:<Login onIdSubmit={setId} />}
-      
     </>
   )
 }

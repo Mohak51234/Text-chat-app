@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import { Button, Form, Modal } from 'react-bootstrap'
 import {useContacts} from '../contexts/ContactsProvider';
-import {v4 as uuidV4} from 'uuid'
 
 export default function NewContactModal({closeModal}) {
 
