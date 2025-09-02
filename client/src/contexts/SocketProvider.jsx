@@ -8,7 +8,7 @@ export default function SocketProvider({id,children}) {
     const [socket,setSocket]=useState()
 
     useEffect(()=>{
-        const newSocket=io('http://localhost:3000',{
+        const newSocket=io('https://text-chat-app-of8p.onrender.com',{
             query:{id}
         });
         setSocket(newSocket)
